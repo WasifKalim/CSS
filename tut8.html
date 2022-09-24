@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This is html forms tutorial</h2>
+    <form action="backend.php">
+
+        <label for="name"> Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+            <!-- The input statement is inline 
+                 statement of div -->
+            <!-- div is a block element it takes the block
+                (the next element has to go in next line) -->
+        </div>
+        <br><!-- for space in between the lines  -->
+        <hr>
+        <div>
+            Role: <input type="text" name="myrole">
+        </div>
+        
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="Mydate">
+        </div>
+
+        <br>
+        <div>
+            Bonus: <input type="number" name="MyBonus">
+        </div>
+
+        <br>
+        
+        <div>
+            <label for="Myeligibility"> Are you eligible:</label>
+            <input type="checkbox" name="" id="Myeligibility"selected >
+        </div>
+
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender">
+            Female <input type="radio" name="myGender">
+            other <input type="radio" name="myGender">
+            <!-- We can take only one option because we 
+            called it by the same "name(myGender)" -->
+        </div>
+
+        <br>
+        <div>
+            Write about yourself: <br> <textarea name="myText" cols="30" rows="10"></textarea>
+        </div>
+        <!-- alt + arrow keys to shift block of lines -->
+
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="ind" >Indica</option>
+                <option value="Kwd" selected>Kwid</option>
+            </select>
+        </div>
+
+        <br>
+        <div>
+            <input type="submit" Value="Submit Now">
+            <input type="Reset" Value="Reset Now">
+        </div>
+    </form>
+</body>
+
+</html>
